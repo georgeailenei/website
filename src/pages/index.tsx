@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Navigation } from "@/components";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <title>Website</title>
       </Head>
       <main>
-        <h1>Welcome</h1>
+        <Navigation />
       </main>
     </>
   );
