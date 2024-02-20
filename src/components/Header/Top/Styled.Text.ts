@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledTaglineContainer = styled.div`
   margin-left: 16px;
-  margin-top: 16px;
+  margin-top: 32px;
   color: #050505;
 
   span {
