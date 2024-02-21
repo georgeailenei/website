@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Navigation, Header } from "@/components";
+import { Navigation, Header, Footer } from "@/components";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <main>
         <Navigation />
         <Header />
+        <Footer />
       </main>
     </>
   );
