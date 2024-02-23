@@ -1,13 +1,11 @@
-import { Header } from "@/components";
-import type { NextPageWithLayout } from "./_app";
-import RootLayout from "./layout";
+import { Header, Navigation, Footer } from "@/components";
 
-const Home: NextPageWithLayout = () => {
-  return;
-};
-
-Home.getLayout = function getLayout(page: ReactElement) {
-  return <RootLayout>{children}</RootLayout>;
-};
-
-export default Home;
+export default function Home() {
+  return (
+    <>
+      <Navigation />
+      <Header />
+      <Footer />
+    </>
+  );
+}
