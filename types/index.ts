@@ -4,5 +4,3 @@ export interface JsonPlaceHolderData {
   title: string;
   body: string;
 }
-
-export type JsonPlaceHolderDataArray = JsonPlaceHolderData[]; // we can do this also niceeeu
