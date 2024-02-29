@@ -8,6 +8,10 @@ export const StyledContainer = styled.footer`
   align-items: center;
   margin-top: 32px;
 
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
   ul {
     margin-left: 16px;
   }
