@@ -2,7 +2,6 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     html, body {
-        height: 100%;
         background-color: #f1f1f1;
         font-family: 'Roboto', sans-serif;
         margin: 0;
@@ -26,9 +25,4 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
     }
-`;
-
-export const StyledMainContainer = styled.div`
-  position: relative;
-  min-height: 100vh;
 `;

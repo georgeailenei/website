@@ -1,4 +1,4 @@
-import { Header, Navigation, Footer } from "@/components";
+import { Header, ArticleSection } from "@/components";
 import { GetStaticProps } from "next";
 import { JsonPlaceHolderData } from "../../types";
 
@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await response.json();
 
-    return { props: { data }, revalidate: 30 }; // revalidate: check if there is new data there; you can revalidate even in days.
+    return { props: { data }, revalidate: 30 };
   } catch (error) {
     console.error("Error fetching data:", error);
 
@@ -27,11 +27,7 @@ export default function Home({ data }: PageProps) {
   return (
     <>
       <Header />
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.title}</li>
-        ))}
-      </ul>
+      <ArticleSection data={data} />
     </>
   );
 }
