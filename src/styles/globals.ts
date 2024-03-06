@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     :root {
@@ -24,8 +24,10 @@ export const GlobalStyles = createGlobalStyle`
         color: #ffffff;
     }
 
-    main {
-        max-width: 1024px;
-        margin: 0 auto;
-    }
+`;
+
+export const StyledContainer = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid red;
 `;

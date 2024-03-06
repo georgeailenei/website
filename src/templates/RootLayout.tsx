@@ -1,4 +1,5 @@
 import { Navigation } from "@/components";
+import { StyledContainer } from "@/styles/globals";
 
 export const metadata = {
   title: "Website",
@@ -11,9 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <StyledContainer>
       <Navigation />
       <main>{children}</main>
-    </>
+    </StyledContainer>
   );
 }

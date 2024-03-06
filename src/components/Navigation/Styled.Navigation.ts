@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
-  max-width: 1024px;
-  margin: 0 auto;
 `;
 
 export const StyledNavSide = styled.div`
