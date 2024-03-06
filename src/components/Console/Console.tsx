@@ -10,7 +10,7 @@ export default function Console() {
     <ConsoleWrapperStyle>
       <form onSubmit={onSubmit}>
         <StyledConsoleButton type="submit">&gt;&gt;</StyledConsoleButton>
-        <input type="text"></input>
+        <input type="text" placeholder="Type help"></input>
       </form>
     </ConsoleWrapperStyle>
   );

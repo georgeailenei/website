@@ -23,10 +23,16 @@ export default function Navigation() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/blog">Work</Link>
+              <Link href="/community">Community</Link>
             </li>
             <li>
-              <Link href="/contact">Get in touch</Link>
+              <Link href="/learn">Learn</Link>
+            </li>
+            <li>
+              <Link href="/report">Report</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </StyledNav>

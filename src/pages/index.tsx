@@ -1,10 +1,20 @@
-import { Header, ArticleSection } from "@/components";
+import { Header, ArticleSection, Console } from "@/components";
 import { GetStaticProps } from "next";
 import { JsonPlaceHolderData } from "../../types";
 
 type PageProps = {
   data: JsonPlaceHolderData[];
 };
+
+export default function Home({ data }: PageProps) {
+  return (
+    <>
+      <Header />
+      <Console />
+      <ArticleSection data={data} />
+    </>
+  );
+}
 
 export const getStaticProps: GetStaticProps<PageProps> = async () => {
   try {
@@ -22,12 +32,3 @@ export const getStaticProps: GetStaticProps<PageProps> = async () => {
     };
   }
 };
-
-export default function Home({ data }: PageProps) {
-  return (
-    <>
-      <Header />
-      <ArticleSection data={data} />
-    </>
-  );
-}
