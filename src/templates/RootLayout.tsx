@@ -1,4 +1,4 @@
-import { Navigation } from "@/components";
+import { Navigation, Footer } from "@/components";
 import { StyledContainer } from "@/styles/globals";
 
 export const metadata = {
@@ -15,6 +15,7 @@ export default function RootLayout({
     <StyledContainer>
       <Navigation />
       <main>{children}</main>
+      <Footer />
     </StyledContainer>
   );
 }
