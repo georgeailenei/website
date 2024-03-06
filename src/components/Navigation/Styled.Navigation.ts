@@ -7,12 +7,12 @@ export const StyledContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const StyledLogoSide = styled.div`
+export const StyledNavSide = styled.div`
   display: flex;
   align-items: center;
   justify-content: first baseline;
   background-color: #050505;
-  min-height: 48px;
+  min-height: 32px;
   width: 100%;
 `;
 
@@ -35,18 +35,14 @@ export const StyledNav = styled.nav`
   height: fit-content;
   margin-right: 16px;
 
-  ul li {
-    display: inline-block;
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 8px;
 
-    a {
-      font-size: 12px;
-      text-decoration: none;
-      margin-left: 8px;
-
-      @media (min-width: 768px) {
-        font-size: 14px;
-        margin-left: 32px;
-      }
+    @media (min-width: 768px) {
+      font-size: 14px;
+      margin-left: 32px;
     }
   }
 
