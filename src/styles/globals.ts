@@ -1,16 +1,19 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    html, body {
-        background-color: #f1f1f1;
+    :root {
+        /* declare CSS variables here */
+    }
+
+    * {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
-    ul {
-    padding: 0;
-    margin: 0;
+    body{
+        background-color: #f1f1f1;
     }
 
     a {
@@ -21,14 +24,8 @@ export const GlobalStyles = createGlobalStyle`
         color: #ffffff;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        padding: 0;
-        margin: 0;
-    }
-
     main {
         max-width: 1024px;
         margin: 0 auto;
     }
-
 `;
