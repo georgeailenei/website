@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
+  border: 1px solid blue;
 `;
 
 export const StyledNavSide = styled.div`
@@ -11,7 +12,6 @@ export const StyledNavSide = styled.div`
   justify-content: first baseline;
   background-color: #050505;
   min-height: 32px;
-  width: 100%;
 `;
 
 export const StyledLogo = styled.h1`
@@ -30,7 +30,6 @@ export const StyledLogo = styled.h1`
 `;
 
 export const StyledNav = styled.nav`
-  height: fit-content;
   margin-right: 16px;
 
   a {
@@ -52,10 +51,9 @@ export const StyledNav = styled.nav`
 
 export const StyledButtonsWrapper = styled.div`
   display: flex;
-  gap: 8px;
-  margin-left: 16px;
-  margin-right: 24px;
-  max-width: 38px;
+  gap: 16px;
+  margin: 0 16px;
+  border: 1px solid green;
 
   button {
     all: unset;

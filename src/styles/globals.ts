@@ -30,6 +30,6 @@ export const StyledContainer = styled.div`
   max-width: 1024px;
   min-height: 100vh;
   margin: 0 auto;
-  border: 1px solid red;
   position: relative;
+  border: 1px solid red;
 `;
