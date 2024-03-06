@@ -1,4 +1,4 @@
-import { Navigation, Footer } from "@/components";
+import { Navigation } from "@/components";
 
 export const metadata = {
   title: "Website",
@@ -14,7 +14,6 @@ export default function RootLayout({
     <>
       <Navigation />
       <main>{children}</main>
-      <Footer />
     </>
   );
 }

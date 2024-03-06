@@ -25,4 +25,10 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
     }
+
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
 `;
