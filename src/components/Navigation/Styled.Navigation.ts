@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
+  display: flex;
   min-height: 48px;
   border-bottom: 0.5px solid var(--text-secondary-color);
+
+  @media (min-width: 775px) {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+  }
 `;
 
 export const StyledLogo = styled.h1`
@@ -15,19 +19,39 @@ export const StyledLogo = styled.h1`
 
 export const StyledLogoWrapper = styled.div`
   margin: auto auto;
+  margin-left: 16px;
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+  }
 `;
 
 export const StyledNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+  display: none;
+
+  @media (min-width: 775px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
 `;
 
 export const StyledButtonsWrapper = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
-  gap: 16px;
+
+  img {
+    margin-right: 16px;
+
+    @media (min-width: 775px) {
+      display: none;
+    }
+  }
 
   button {
     all: unset;
@@ -38,5 +62,19 @@ export const StyledButtonsWrapper = styled.div`
 
   button:hover {
     color: var(--text-color);
+  }
+`;
+
+export const StyledLangWrapper = styled.div`
+  display: none;
+
+  @media (min-width: 775px) {
+    display: flex;
+    gap: 16px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 0px;
   }
 `;
