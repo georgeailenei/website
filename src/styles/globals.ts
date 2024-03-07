@@ -32,6 +32,13 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 200;
     }
 
+    p {
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
     span {
         font-size: 14px;
         font-weight: 200;

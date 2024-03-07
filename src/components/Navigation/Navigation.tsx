@@ -2,11 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BurgerMenu from "../../../public/navigation/burgerMenu.svg";
-
+import Logo from "./Logo/Logo";
 import {
   StyledContainer,
-  StyledLogo,
-  StyledLogoWrapper,
   StyledNav,
   StyledButtonsWrapper,
   StyledLangWrapper,
@@ -15,12 +13,7 @@ import {
 export default function Navigation() {
   return (
     <StyledContainer>
-      <StyledLogoWrapper>
-        <StyledLogo>
-          codelines <span>&reg;</span>
-        </StyledLogo>
-      </StyledLogoWrapper>
-
+      <Logo />
       <StyledNav>
         <Link href="/contact">Contact</Link>
         <Link href="/report">Report</Link>
