@@ -2,28 +2,40 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     :root {
-        /* declare CSS variables here */
+        --main-bg-color: #0b122c;
+        --text-color: #f6f6fb;
+        --text-secondary-color: #b1b9c8;
+        --button-color: #f75e2e;
     }
 
     * {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
     body{
-        background-color: #f1f1f1;
+        background-color: var(--main-bg-color);
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-color);
+        font-weight: 600;
+    }
+    
 
     a {
-        color: #bdbdbd;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: 200;
     }
 
-    a:hover{
-        color: #ffffff;
+    span {
+        font-size: 14px;
+        font-weight: 200;
     }
-
 `;
 
 export const StyledContainer = styled.div`
@@ -31,5 +43,5 @@ export const StyledContainer = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;

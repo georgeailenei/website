@@ -4,7 +4,7 @@ import Link from "next/link";
 import {
   StyledContainer,
   StyledLogo,
-  StyledNavSide,
+  StyledLogoWrapper,
   StyledNav,
   StyledButtonsWrapper,
 } from "./Styled.Navigation";
@@ -12,19 +12,19 @@ import {
 export default function Navigation() {
   return (
     <StyledContainer>
-      <StyledNavSide>
+      <StyledLogoWrapper>
         <StyledLogo>
-          codelines. <span>&reg;</span>
+          codelines <span>&reg;</span>
         </StyledLogo>
+      </StyledLogoWrapper>
 
-        <StyledNav>
-          <Link href="/">Home</Link>
-          <Link href="/community">Community</Link>
-          <Link href="/learn">Learn</Link>
-          <Link href="/report">Report</Link>
-          <Link href="/contact">Contact</Link>
-        </StyledNav>
-      </StyledNavSide>
+      <StyledNav>
+        <Link href="/">Home</Link>
+        <Link href="/community">Community</Link>
+        <Link href="/learn">Learn</Link>
+        <Link href="/report">Report</Link>
+        <Link href="/contact">Contact</Link>
+      </StyledNav>
 
       <StyledButtonsWrapper>
         <button>EN</button>

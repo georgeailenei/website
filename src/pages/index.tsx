@@ -9,9 +9,9 @@ type PageProps = {
 export default function Home({ data }: PageProps) {
   return (
     <>
-      <Header />
-      <Console />
-      <ArticleSection data={data} />
+      {/* <Header />
+      <Console /> */}
+      {/* <ArticleSection data={data} /> */}
     </>
   );
 }
