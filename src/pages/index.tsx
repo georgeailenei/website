@@ -1,4 +1,4 @@
-import { Lobby } from "@/components";
+import { Lobby, CustomButton } from "@/components";
 import { GetStaticProps } from "next";
 import { JsonPlaceHolderData } from "../../types";
 
@@ -7,7 +7,12 @@ type PageProps = {
 };
 
 export default function Home({ data }: PageProps) {
-  return <Lobby />;
+  return (
+    <>
+      <Lobby />
+      <CustomButton />
+    </>
+  );
 }
 
 export const getStaticProps: GetStaticProps<PageProps> = async () => {
