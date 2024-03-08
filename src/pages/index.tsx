@@ -7,12 +7,7 @@ type PageProps = {
 };
 
 export default function Home({ data }: PageProps) {
-  return (
-    <>
-      {/* <Console /> */}
-      {/* <ArticleSection data={data} /> */}
-    </>
-  );
+  return <></>;
 }
 
 export const getStaticProps: GetStaticProps<PageProps> = async () => {

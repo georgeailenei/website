@@ -19,7 +19,7 @@ export default function Navigation() {
         <Link href="/report">Report</Link>
         <Link href="/learn">Learn</Link>
         <Link href="/community">Community</Link>
-        <Link href="/">Home</Link>
+        <Link href="/">Play</Link>
       </StyledNav>
 
       <StyledButtonsWrapper>
