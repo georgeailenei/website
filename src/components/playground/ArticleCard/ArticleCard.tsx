@@ -1,5 +1,5 @@
 import React from "react";
-import { JsonPlaceHolderData } from "../../../types";
+import { JsonPlaceHolderData } from "../../../../types";
 import { StyledCard, StyledSection } from "./Styled.ArticleCard";
 
 type Props = {

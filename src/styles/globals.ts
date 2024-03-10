@@ -6,13 +6,15 @@ export const GlobalStyles = createGlobalStyle`
         --text-color: #f6f6fb;
         --text-secondary-color: #b1b9c8;
         --button-color: #f75e2e;
+        --card-text-color: #222222;
+        --card-secondary-color: #6b6b6b;
     }
 
     * {
         font-family: 'Inter', sans-serif;
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
     body{
@@ -43,6 +45,10 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 14px;
         font-weight: 200;
     }
+
+    ul {
+        list-style: none;
+    }
 `;
 
 export const StyledContainer = styled.div`
@@ -50,5 +56,4 @@ export const StyledContainer = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   position: relative;
-  /* border: 1px solid red; */
 `;

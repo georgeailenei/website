@@ -1,4 +1,4 @@
-import { Lobby, CustomButton } from "@/components";
+import { Lobby, BestPlayersCard } from "@/components";
 import { GetStaticProps } from "next";
 import { JsonPlaceHolderData } from "../../types";
 
@@ -10,7 +10,7 @@ export default function Home({ data }: PageProps) {
   return (
     <>
       <Lobby />
-      <CustomButton />
+      <BestPlayersCard />
     </>
   );
 }
