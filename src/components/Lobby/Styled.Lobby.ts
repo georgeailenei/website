@@ -7,7 +7,7 @@ export const StyledTable = styled.table`
   margin: 16px auto;
   font-size: small;
 
-  > tr:first-child {
+  > thead > tr:first-child {
     &:hover {
       cursor: default;
       background-color: var(--main-bg-color);
