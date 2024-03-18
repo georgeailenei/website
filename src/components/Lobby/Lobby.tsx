@@ -5,6 +5,7 @@ import {
   StyledTr,
   StyledTd,
   StyledJoinTd,
+  StyledEmptyCell,
 } from "./Styled.Lobby";
 
 export default function Lobby() {
@@ -40,6 +41,9 @@ export default function Lobby() {
         </StyledTr>
       </tbody>
       <tfoot>
+        <StyledTr>
+          <StyledEmptyCell colSpan={3}></StyledEmptyCell>
+        </StyledTr>
         <StyledTr>
           <StyledJoinTd colSpan={3}>Join</StyledJoinTd>
         </StyledTr>

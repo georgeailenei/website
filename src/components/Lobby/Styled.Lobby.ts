@@ -7,7 +7,7 @@ export const StyledTable = styled.table`
   margin: 16px auto;
   font-size: small;
 
-  > thead > tr:first-child {
+  thead > tr:first-child {
     &:hover {
       cursor: default;
       background-color: var(--main-bg-color);
@@ -42,7 +42,15 @@ export const StyledTd = styled.td`
 export const StyledJoinTd = styled.td`
   padding: 16px;
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   background-color: var(--button-color);
+`;
+
+export const StyledEmptyCell = styled(StyledJoinTd)`
+  padding: 8px;
+  background-color: var(--main-bg-color);
+  cursor: default;
 `;

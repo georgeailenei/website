@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContainer = styled.div`
   border-top: 0.5px solid var(--text-secondary-color);
-  position: absolute;
+
   min-height: 48px;
   width: 100%;
   bottom: 0;
