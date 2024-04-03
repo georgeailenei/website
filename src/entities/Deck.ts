@@ -1,31 +1,29 @@
 export default class Deck {
   suits: string[];
   values: string[];
-  valuesFourPlayers: string[];
 
   constructor() {
     this.suits = ["♣", "♠", "♦", "♥"];
-    this.values = [
-      "A",
-      "K",
-      "Q",
-      "J",
-      "10",
-      "9",
-      "8",
-      "7",
-      "6",
-      "5",
-      "4",
-      "3",
-      "2",
-    ];
-    this.valuesFourPlayers = ["A", "K", "Q", "J", "10", "9", "8", "7"];
+    this.values = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3"];
   }
 
-  newDeck() {
+  newDeck(players: number) {
+    let removeCards = 0;
+
+    if (players === 5) {
+      removeCards = 2;
+    } else if (players === 4) {
+      removeCards = 4;
+    } else if (players === 3) {
+      removeCards = 6;
+    } else {
+      removeCards = 0;
+    }
+
+    const deck = this.values.slice(0, this.values.length - removeCards);
+
     return this.suits.flatMap((suit) => {
-      return this.values.map((value) => {
+      return deck.map((value) => {
         return new Card(suit, value);
       });
     });
